@@ -8,3 +8,18 @@
 
 <img width="615" alt="Screen Shot 2021-06-07 at 7 22 12 PM" src="https://user-images.githubusercontent.com/80634627/121099357-b12e0500-c7c5-11eb-80cb-d1c61dc81a7a.png">
 
+<h2>Wireframes:</h2>
+
+<h2>MVP:</h2>
+<ul>
+  <li>dropdown menu of beaches</li>
+  <li>location and button linking  to directions</li>
+  <li>accesibility and button linking to more accessibility info</li>
+  <li>bathroom information</li>
+</ul>
+
+<h2>post-MVP:</h2>
+</ul>
+  <li>button to link to current weather conditions and forecast</li>
+</ul>
+
