@@ -29,10 +29,46 @@
 </ul>
 
 <h2>Goals:</h2>
-Day 1 (Tuesday): HTML skeleton, minimal styling of content, pseudo-coding js <br>
-Day 2 (Wednesday): coding js and testing; start CSS styling <br>
-Day 3 (Thursday): CSS styling for desktop and mobile; testing <br>
-Day 4 (Friday): pseudo-coding and coding post-MVP functionality js; final testing <br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Project Day</th>
+    <th class="tg-0lax">Date</th>
+    <th class="tg-0pky">Goal</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Tuesday</td>
+    <td class="tg-0lax">6/8</td>
+    <td class="tg-0pky">update wireframes; layout basic HTML with minimal styling; psuedo-code JS</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wednesday</td>
+    <td class="tg-0lax">6/9</td>
+    <td class="tg-0pky">code JS for axios calls and interactivity; test JS</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Thursday</td>
+    <td class="tg-0lax">6/10</td>
+    <td class="tg-0pky">CSS styling and testing; pseudo-code post-MVP elements</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Friday</td>
+    <td class="tg-0lax">6/11</td>
+    <td class="tg-0pky">code JS for post-MVP and test; final CSS styling; launch</td>
+  </tr>
+</tbody>
+</table>
 
 <h2>Priority Matrix:</h2>
 ![priority grid](https://user-images.githubusercontent.com/80634627/121108816-679ae580-c7d8-11eb-84de-3fa50cb8a9b9.png)
