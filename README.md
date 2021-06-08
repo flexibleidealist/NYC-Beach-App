@@ -74,12 +74,68 @@
 ![priority grid](https://user-images.githubusercontent.com/80634627/121108816-679ae580-c7d8-11eb-84de-3fa50cb8a9b9.png)
 
 <h2>Timeframes:</h2>
-Initial HTML and minimal styling: 2 hours <br>
-Javascript Axios: 1-2 hours <br>
-Javascript for rendering content: 2-3 hours <br>
-Javascript for user interaction: 2-3 hours <br>
-Testing and debugging Javascript: 3 hours <br>
-More detailed CSS styling: 3 hours <br>
-Research for adding Post MVP Weather API: 1-2 hours <br>
-Javascript for weather functionality: 2-3 hours <br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Task</th>
+    <th class="tg-0lax">Expected Time</th>
+    <th class="tg-0lax">Completion Time</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Initial HTML &amp; minimal styling</td>
+    <td class="tg-0lax">1-2 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JS for Axios API calls</td>
+    <td class="tg-0lax">2 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JS for rendering content</td>
+    <td class="tg-0lax">3 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JS for interactivity</td>
+    <td class="tg-0lax">1-2 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Testing &amp; debugging JS</td>
+    <td class="tg-0lax">2-3 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">More detailed CSS styling</td>
+    <td class="tg-0lax">3 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Research for adding post-MVP </td>
+    <td class="tg-0lax">1-2 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JS for post-MVP</td>
+    <td class="tg-0lax">2-3 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Testing &amp; debugging</td>
+    <td class="tg-0lax">2-3 hrs</td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
 
