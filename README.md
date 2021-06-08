@@ -29,8 +29,7 @@
 </ul>
 
 <h2>Goals:</h2>
-
-<style type="text/css">
+  <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -38,16 +37,16 @@
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
+ </style>
+  <table class="tg">
+  <thead>
   <tr>
     <th class="tg-0pky">Project Day</th>
     <th class="tg-0lax">Date</th>
     <th class="tg-0pky">Goal</th>
   </tr>
 </thead>
-<tbody>
+<tbody> 
   <tr>
     <td class="tg-0pky">Tuesday</td>
     <td class="tg-0lax">6/8</td>
@@ -69,7 +68,7 @@
     <td class="tg-0pky">code JS for post-MVP and test; final CSS styling; launch</td>
   </tr>
 </tbody>
-</table>
+  </table>
 
 <h2>Priority Matrix:</h2>
 ![priority grid](https://user-images.githubusercontent.com/80634627/121108816-679ae580-c7d8-11eb-84de-3fa50cb8a9b9.png)
