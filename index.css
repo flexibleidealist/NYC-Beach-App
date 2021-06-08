@@ -3,8 +3,8 @@ body {
 }
 
 header {
-  background: linear-gradient(to bottom, rgb(119, 207, 242), rgb(252, 80, 17));
-  border-bottom: 1px solid black;
+  background: linear-gradient(to bottom, skyblue, rgb(252, 80, 17));
+  /* border-bottom: 1px solid black; */
   color: whitesmoke;
   padding: 20px;
   text-align: center;
@@ -14,7 +14,8 @@ header {
 
 
 #dropdown {
-  width: 250px;
+  width: 340px;
+  background-color: lightgray;
   border-radius: 5px;
 }
 
