@@ -6,9 +6,18 @@
 
 <h2>API snippet:</h2>
 
-<img width="615" alt="Screen Shot 2021-06-07 at 7 22 12 PM" src="https://user-images.githubusercontent.com/80634627/121099357-b12e0500-c7c5-11eb-80cb-d1c61dc81a7a.png">
+<img width="600" alt="Screen Shot 2021-06-07 at 7 22 12 PM" src="https://user-images.githubusercontent.com/80634627/121099357-b12e0500-c7c5-11eb-80cb-d1c61dc81a7a.png">
 
 <h2>Wireframes:</h2>
+
+<img width="250" alt="Screen Shot 2021-06-07 at 9 15 31 PM" src="https://user-images.githubusercontent.com/80634627/121107436-ecd0cb00-c7d5-11eb-819e-1913e00ce2de.png">
+
+<img width="250" alt="Screen Shot 2021-06-07 at 9 15 42 PM" src="https://user-images.githubusercontent.com/80634627/121107467-fb1ee700-c7d5-11eb-918e-43506d3e63d7.png">
+
+<img width="250" alt="Screen Shot 2021-06-07 at 9 16 08 PM" src="https://user-images.githubusercontent.com/80634627/121107492-0540e580-c7d6-11eb-92ff-17866cbd406f.png">
+
+<img width="250" alt="Screen Shot 2021-06-07 at 9 16 20 PM" src="https://user-images.githubusercontent.com/80634627/121107499-0a059980-c7d6-11eb-8ab3-2ce3324ce52c.png">
+
 
 <h2>MVP:</h2>
 <ul>
