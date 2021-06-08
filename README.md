@@ -21,5 +21,6 @@
 <h2>post-MVP:</h2>
 </ul>
   <li>button to link to current weather conditions and forecast</li>
+  <li> add an image for each beach</li>
 </ul>
 
