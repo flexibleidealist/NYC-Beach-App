@@ -34,21 +34,21 @@
 </ul>
 
 <h2>Goals:</h2>
-Day 1 (Tuesday): HTML skeleton, minimal styling of content, pseudo-coding js
-Day 2 (Wednesday): coding js and testing; start CSS styling
-Day 3 (Thursday): CSS styling for desktop and mobile; testing
-Day 4 (Friday): pseudo-coding and coding post-MVP functionality js; final testing
+Day 1 (Tuesday): HTML skeleton, minimal styling of content, pseudo-coding js <br>
+Day 2 (Wednesday): coding js and testing; start CSS styling <br>
+Day 3 (Thursday): CSS styling for desktop and mobile; testing <br>
+Day 4 (Friday): pseudo-coding and coding post-MVP functionality js; final testing <br>
 
 <h2>Priority Matrix:</h2>
 ![priority grid](https://user-images.githubusercontent.com/80634627/121108816-679ae580-c7d8-11eb-84de-3fa50cb8a9b9.png)
 
 <h2>Timeframes:</h2>
-Initial HTML and minimal styling: 2 hours
-Javascript Axios: 1-2 hours
-Javascript for rendering content: 2-3 hours
-Javascript for user interaction: 2-3 hours
-Testing and debugging Javascript: 3 hours
-More detailed CSS styling: 3 hours
-Research for adding Post MVP Weather API: 1-2 hours
-Javascript for weather functionality: 2-3 hours
+Initial HTML and minimal styling: 2 hours <br>
+Javascript Axios: 1-2 hours <br>
+Javascript for rendering content: 2-3 hours <br>
+Javascript for user interaction: 2-3 hours <br>
+Testing and debugging Javascript: 3 hours <br>
+More detailed CSS styling: 3 hours <br>
+Research for adding Post MVP Weather API: 1-2 hours <br>
+Javascript for weather functionality: 2-3 hours <br>
 
