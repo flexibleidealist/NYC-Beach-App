@@ -24,3 +24,10 @@
   <li> add an image for each beach</li>
 </ul>
 
+<h2>Goals:</h2>
+Day 1 (Tuesday): HTML skeleton, minimal styling of content, pseudo-coding js
+Day 2 (Wednesday): coding js and testing; start CSS styling
+Day 3 (Thursday): CSS styling for desktop and mobile; testing
+Day 4 (Friday): pseudo-coding and coding post-MVP functionality js; final testing
+
+
