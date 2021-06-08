@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(to bottom, rgb(119, 207, 242), rgb(252, 80, 17));
+  border-bottom: 1px solid black;
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+} 
+
+
+
+#dropdown {
+  width: 250px;
+  border-radius: 5px;
+}
+
+#display-section {
+  background: linear-gradient(to top, rgb(13, 13, 198), darkblue);
+  height: 100vh;
+}
