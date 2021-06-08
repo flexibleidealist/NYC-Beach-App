@@ -22,7 +22,7 @@
 <h2>MVP:</h2>
 <ul>
   <li>dropdown menu of beaches</li>
-  <li>location and button linking  to directions</li>
+  <li>location and button linking  to directions and googlemap</li>
   <li>accesibility and button linking to more accessibility info</li>
   <li>bathroom information</li>
 </ul>
