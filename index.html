@@ -12,17 +12,23 @@
 <body>
   <header>
     <h1>NYC Beaches</h1>
-    <h3>Choose a beach:</h3>
-    <select id="dropdown"></select>
+    <!-- <h3>Choose a beach:</h3> -->
+    <select id="dropdown">
+      <option>Choose a beach:</option>
+    </select>
   </header>
   <section id="display-section">
     <div id="info">
 
     </div>
-    <div id="directions">
+    <div id="buttons-div" class="hidden">
+      <button id="get-directions">directions</button>
+      <button id="accessibility-notes">accessibility info</button>
+    </div>
+    <div id="directions" class="hidden">
 
     </div>
-    <div id="accessibility">
+    <div id="accessibility" class="hidden">
       
     </div>
   </section>

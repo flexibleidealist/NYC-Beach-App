@@ -1,17 +1,34 @@
 body {
   margin: 0;
 }
+button {
+  margin: 0;
+}
 
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+h5 {
+  margin: 2px;
+  font-size: 18px;
+  font-weight: normal;
+}
 header {
   background: linear-gradient(to bottom, skyblue, rgb(252, 80, 17));
-  /* border-bottom: 1px solid black; */
   color: whitesmoke;
   padding: 20px;
   text-align: center;
   width: 100vw;
 } 
 
-
+.hidden {
+  display: none;
+}
 
 #dropdown {
   width: 340px;
@@ -22,4 +39,26 @@ header {
 #display-section {
   background: linear-gradient(to top, rgb(13, 13, 198), darkblue);
   height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+#info {
+  color: black;
+  margin: 35px 10vw;
+  width: 80vw;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+}
+
+#directions {
+  color: black;
+  padding: 5px;
+  width: 80vw;
+  background-color: white;
+}
+
+#accessibility {
+  width: 80vw;
 }
