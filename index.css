@@ -1,3 +1,7 @@
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
@@ -9,6 +13,15 @@ button {
   background: none;
   height: 25px;
 }
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button:hover {
+  background-color: white;
+  color: darkblue;
+}
 
 p {
   margin: 0;
@@ -18,15 +31,16 @@ p {
 h1 {
   margin-bottom: 40px;
   font-family: "Crimson Text", serif;
-  font-size: 45px;
+  font-size: 55px;
 }
+
 h5 {
   margin: 2px;
   font-size: 18px;
   font-weight: normal;
 }
 header {
-  background: linear-gradient(to bottom, skyblue, rgb(252, 80, 17));
+  background: linear-gradient(to bottom, skyblue, rgb(249, 92, 35));
   color: whitesmoke;
   padding: 20px;
   text-align: center;
@@ -46,7 +60,7 @@ span {
 }
 
 #display-section {
-  background: linear-gradient(to top, rgb(13, 13, 198), darkblue);
+  background: linear-gradient(to top, rgb(28, 28, 205), rgb(2, 2, 94));
   height: 100vh;
   margin: 0;
   display: flex;
@@ -57,7 +71,7 @@ span {
   color: black;
   margin: 35px 10vw;
   width: 80vw;
-  background-color: white;
+  background-color: whitesmoke;
   /* position: absolute; */
   border-radius: 10px;
   box-sizing: border-box;
@@ -68,12 +82,6 @@ padding: 5px;
 
 }
 
-.buttons-visible {
-  /* display: flex;
-  flex-direction: row;
-  align-content: center; */
-  /* margin: 0 auto; */
-}
 
 #directions {
   color: black;
@@ -81,7 +89,7 @@ padding: 5px;
   width: 80vw;
   margin: 35px 10vw 0px 10vw;
   border-radius: 10px;
-  background-color: white;
+  background-color: whitesmoke;
   box-sizing: border-box;
 }
 
@@ -91,6 +99,16 @@ padding: 5px;
   width: 80vw;
   margin: 35px 10vw;
   border-radius: 10px;
-  background-color: white;
+  background-color: whitesmoke;
   box-sizing: border-box;
+}
+
+#back-to-top {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  #dropdown {
+    width: 275px;
+  }
 }

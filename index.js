@@ -7,6 +7,7 @@ const buttonsDiv = document.getElementById("buttons-div");
 
 const directionsButton = document.getElementById("get-directions");
 const accessibilityButton = document.getElementById("accessibility-notes");
+const topButton = document.getElementById("top");
 
 const directionsDiv = document.getElementById("directions");
 
@@ -84,7 +85,7 @@ dropDown.addEventListener("change", async () => {
         const basicInfo = document.createElement("p");
         basicInfo.innerHTML = 
         
-        `<span>${response.data[i].Name}<br>Location:  </span>${response.data[i].Location}<br><span>Bathrooms:  </span>${response.data[i].Bathroom}<br><span>Accessible:  </span>${response.data[i].Accessible}<br><br>${response.data[i].Description}`;
+        `<span>${response.data[i].Name}<br><br>Location:  </span>${response.data[i].Location}<br><span>Bathrooms:  </span>${response.data[i].Bathroom}<br><span>Accessible:  </span>${response.data[i].Accessible}<br><br>${response.data[i].Description}`;
 
         
         document.getElementById("info").append(basicInfo);
@@ -126,10 +127,17 @@ const hideElement = (element) => {
   element.classList.add("hidden");
 }
 // add event listener to the directions button in the main info display (in the #info div) to toggle the display property of the #directions div to display on the page
-directionsButton.addEventListener("click", () => {unhideElement(directionsDiv)});
+directionsButton.addEventListener("click", () => {
+  unhideElement(directionsDiv);
+  hideElement(accessibilityDiv);
+  unhideElement(topButton);
+});
 
 // add event listener to the disability info button in the main info display (in the #info div) to call displayAccessibility()
-accessibilityButton.addEventListener("click", () => {unhideElement(accessibilityDiv)});
-// add event listener to the "top" button to bring use back to the top of the page
+accessibilityButton.addEventListener("click", () => {
+  unhideElement(accessibilityDiv);
+  hideElement(directionsDiv);
+  unhideElement(topButton);
+});
 
-// add media query for mobile screen size breakpoint 
+topButton.addEventListener("click", () => hideElement(topButton));
