@@ -111,6 +111,7 @@ const unhideElement = (element) => {
   element.classList.remove("hidden");
 }
 // add event listener to the directions button in the main info display (in the #info div) to toggle the display property of the #directions div to display on the page
+directionsButton.addEventListener("click", () => {unhideElement(directionsDiv)});
 
 // add event listener to the more info button in the main info display (in the #info div) to call displayAccessibility()
 

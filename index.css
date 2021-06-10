@@ -40,7 +40,8 @@ header {
   background: linear-gradient(to top, rgb(13, 13, 198), darkblue);
   height: 100vh;
   margin: 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #info {
@@ -48,15 +49,30 @@ header {
   margin: 35px 10vw;
   width: 80vw;
   background-color: white;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 10px;
+  box-sizing: border-box;
+
+}
+#buttons-div { 
+padding: 5px;
+
+}
+
+.buttons-visible {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
 }
 
 #directions {
   color: black;
   padding: 5px;
   width: 80vw;
+  margin: 35px 10vw;
+  border-radius: 10px;
   background-color: white;
+  box-sizing: border-box;
 }
 
 #accessibility {
