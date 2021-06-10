@@ -93,7 +93,16 @@ dropDown.addEventListener("change", async () => {
         console.log(response.data[i].Accessible_Notes);
 
         const accessibilityDiv = document.querySelector("#accessibility");
-        accessibilityDiv.innerHTML = response.data[i].Accessible_Notes;
+        if (response.data[i].Accessible_Notes === null) {
+          accessibilityDiv.innerHTML = `For more information call ${response.data[i].Phone}.`
+        }
+        else if (response.data[i].Phone === null && response.data[i].Accessible_Notes === null) {
+          accessibilityDiv.innerHTML = "For more information call 311."}
+        else if (response.data[i].Phone === null) {accessibilityDiv.innerHTML = `${response.data[i].Accessible_Notes}<br> For more information call 311.`
+        } else {
+            accessibilityDiv.innerHTML = `${response.data[i].Accessible_Notes}<br> For more information call ${response.data[i].Phone}.`
+          };
+
        
       }  
       
