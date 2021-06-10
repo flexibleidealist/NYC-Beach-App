@@ -77,6 +77,7 @@ dropDown.addEventListener("change", async () => {
     node.remove();
   hideElement(directionsDiv);
   hideElement(accessibilityDiv);
+  hideElement(topButton);
   });
   try {
     const response = await axios.get(url);

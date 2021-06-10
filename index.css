@@ -2,9 +2,16 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 button {
   margin-left: 10vw;
   border: 1px solid white;
@@ -12,10 +19,6 @@ button {
   color: white;
   background: none;
   height: 25px;
-}
-a {
-  text-decoration: none;
-  color: currentColor;
 }
 
 button:hover {
@@ -39,6 +42,11 @@ h5 {
   font-size: 18px;
   font-weight: normal;
 }
+
+span {
+  font-weight: 700;
+}
+
 header {
   background: linear-gradient(to bottom, skyblue, rgb(249, 92, 35));
   color: whitesmoke;
@@ -46,9 +54,7 @@ header {
   text-align: center;
   width: 100vw;
 } 
-span {
-  font-weight: 700;
-}
+
 .hidden {
   display: none;
 }
@@ -60,7 +66,7 @@ span {
 }
 
 #display-section {
-  background: linear-gradient(to top, rgb(28, 28, 205), rgb(2, 2, 94));
+  background: linear-gradient(to top, rgb(67, 67, 205), rgb(2, 2, 94));
   height: 100vh;
   margin: 0;
   display: flex;
@@ -81,7 +87,6 @@ span {
 padding: 5px;
 
 }
-
 
 #directions {
   color: black;
