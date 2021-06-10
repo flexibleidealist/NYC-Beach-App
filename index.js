@@ -1,7 +1,18 @@
-// store the dropdown menu in a constant
-const dropDown = document.getElementById("dropdown");
+// define gloabl constants 
 const url = "https://cors-anywhere.herokuapp.com/https://www.nycgovparks.org/bigapps/DPR_Beaches_001.json"
-// write a function appendNames() to populate the dropdown menu with the names of the beaches; thge function should 1) create an option for each name and 2) find the value for the key "Name" for each item in the response data and set it to the innerText of each option 
+
+const dropDown = document.getElementById("dropdown");
+
+const buttonsDiv = document.getElementById("buttons-div");
+
+const directionsButton = document.getElementById("get-directions");
+const accessibilityButton = document.getElementById("accessibility-notes");
+
+const directionsDiv = document.getElementById("directions");
+
+const accessibilityDiv = document.getElementById("accessibility");
+
+// write a function appendNames() to populate the dropdown menu with the names of the beaches from the API call
 
 const appendNames = (beachNames) => {
   beachNames.forEach (name => {
@@ -35,7 +46,15 @@ const getBeachInfo = async (beach) => {
   }
 }
 
+
+// directionsButton.addEventListener("click", unhideElement);
+
+
+
+
 // call getNames() on page load
+
+
 getNames()
 
 
@@ -61,23 +80,36 @@ dropDown.addEventListener("change", async () => {
     for (let i = 0; i < response.data.length; i += 1) {
       if (response.data[i].Name === dropDown.value) {
         const basicInfo = document.createElement("p");
-        basicInfo.innerHTML = `${response.data[i].Name}<br>Location: ${response.data[i].Location}<br>Bathrooms: ${response.data[i].Bathroom}<br>Accessible: ${response.data[i].Accessible}<br><br>${response.data[i].Description}`;
+        basicInfo.innerHTML = 
+        
+        `${response.data[i].Name}<br>Location:  ${response.data[i].Location}<br>Bathrooms:  ${response.data[i].Bathroom}<br>Accessible:  ${response.data[i].Accessible}<br><br>${response.data[i].Description}`;
+
+        
         document.getElementById("info").append(basicInfo);
         const directionsDiv = document.getElementById("directions");
         directionsDiv.innerHTML = response.data[i].Directions;
-        const accessibilityDiv = getElementById("accessibility");
-        accessibilityDiv.innerHTML = response.data[i].Accessible_Notes;
-        document.getElementById("buttons-div").classList.remove("hidden");
+        console.log(response.data[i].Accessible_Notes);
 
-      }
+        const accessibilityDiv = document.querySelector("#accessibility");
+        accessibilityDiv.innerHTML = response.data[i].Accessible_Notes;
+       
+      }  
+      
+      
+        
+
+      
     }
     
   } catch (error) {
     console.error(error.message);
   }
-  
+  unhideElement(buttonsDiv);
 })
 
+const unhideElement = (element) => {
+  element.classList.remove("hidden");
+}
 // add event listener to the directions button in the main info display (in the #info div) to toggle the display property of the #directions div to display on the page
 
 // add event listener to the more info button in the main info display (in the #info div) to call displayAccessibility()
