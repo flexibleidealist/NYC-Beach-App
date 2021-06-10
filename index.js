@@ -74,6 +74,8 @@ getNames()
 dropDown.addEventListener("change", async () => {
   document.getElementById("info").childNodes.forEach(node => {
     node.remove();
+  hideElement(directionsDiv);
+  hideElement(accessibilityDiv);
   });
   try {
     const response = await axios.get(url);
@@ -82,7 +84,7 @@ dropDown.addEventListener("change", async () => {
         const basicInfo = document.createElement("p");
         basicInfo.innerHTML = 
         
-        `${response.data[i].Name}<br>Location:  ${response.data[i].Location}<br>Bathrooms:  ${response.data[i].Bathroom}<br>Accessible:  ${response.data[i].Accessible}<br><br>${response.data[i].Description}`;
+        `<span>${response.data[i].Name}<br>Location:  </span>${response.data[i].Location}<br><span>Bathrooms:  </span>${response.data[i].Bathroom}<br><span>Accessible:  </span>${response.data[i].Accessible}<br><br>${response.data[i].Description}`;
 
         
         document.getElementById("info").append(basicInfo);
@@ -110,11 +112,15 @@ dropDown.addEventListener("change", async () => {
 const unhideElement = (element) => {
   element.classList.remove("hidden");
 }
+
+const hideElement = (element) => {
+  element.classList.add("hidden");
+}
 // add event listener to the directions button in the main info display (in the #info div) to toggle the display property of the #directions div to display on the page
 directionsButton.addEventListener("click", () => {unhideElement(directionsDiv)});
 
-// add event listener to the more info button in the main info display (in the #info div) to call displayAccessibility()
-
+// add event listener to the disability info button in the main info display (in the #info div) to call displayAccessibility()
+accessibilityButton.addEventListener("click", () => {unhideElement(accessibilityDiv)});
 // add event listener to the "top" button to bring use back to the top of the page
 
 // add media query for mobile screen size breakpoint 
