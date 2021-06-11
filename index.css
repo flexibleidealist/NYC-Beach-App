@@ -1,6 +1,9 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: visible; */
 }
 
 body {
@@ -9,21 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: currentColor;
-}
-
-button {
-  margin-left: 10vw;
-  border: 1px solid white;
-  border-radius: 5px;
-  color: white;
-  background: none;
-  height: 25px;
-}
-
-button:hover {
-  background-color: white;
-  color: darkblue;
+  
 }
 
 p {
@@ -47,13 +36,55 @@ span {
   font-weight: 700;
 }
 
+#nav {
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgb(2, 2, 94);
+  padding: 0 20px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 header {
   background: linear-gradient(to bottom, skyblue, rgb(249, 92, 35));
   color: whitesmoke;
   padding: 20px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 } 
+
+.nav-link {
+  margin: 10px;
+  font-family: "Crimson Text", serf;
+  color: rgb(2, 2, 94);
+  width: fit-content; 
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid rgb(249, 92, 35);
+}
+
+.home:hover {
+  border-bottom: 1px solid rgb(2, 2, 94);
+}
+
+.main-button {
+  margin-left: 10vw;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background: none;
+  height: 25px;
+}
+
+.main-button:hover {
+  background-color: white;
+  color: darkblue;
+}
 
 .hidden {
   display: none;
@@ -68,9 +99,11 @@ header {
 #display-section {
   background: linear-gradient(to top, rgb(67, 67, 205), rgb(2, 2, 94));
   height: 100vh;
+  width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 #info {
@@ -78,11 +111,9 @@ header {
   margin: 35px 10vw;
   width: 80vw;
   background-color: whitesmoke;
-  /* position: absolute; */
   border-radius: 10px;
-  box-sizing: border-box;
-
 }
+
 #buttons-div { 
 padding: 5px;
 
@@ -112,8 +143,21 @@ padding: 5px;
   margin-top: 15px;
 }
 
+#home-link {
+  color: rgb(249, 92, 35);
+  margin-right: auto;
+}
+
+#home-link:hover {
+  border-bottom: 1 px solid rgb(2, 2, 94);
+}
+
 @media screen and (max-width: 425px) {
+  h1 {
+    font-size: 40px;
+  }
+  
   #dropdown {
-    width: 275px;
+    width: 250px;
   }
 }

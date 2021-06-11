@@ -12,6 +12,11 @@
   <title>NYC Beach App</title>
 </head>
 <body>
+  <nav id="nav">
+    <a href="" class="home" id="home-link">Home</a>
+    <a class="nav-link" target="_blank" href="https://www1.nyc.gov/site/doh/health/health-topics/beach-homepage.page">NYC Health</a>
+    <a class="nav-link" target="_blank" href="https://www.nycgovparks.org/facilities/beaches">NYC Parks</a>
+  </nav>
   <header id="header">
     <h1>NYC Beaches</h1>
     <select id="dropdown">
@@ -22,9 +27,9 @@
     <div id="info">
 
     </div>
-    <div id="buttons-div" class="hidden" class="buttons-visible">
-      <a href="#buttons-div"><button id="get-directions">directions & parking</button></a>
-      <a href="#buttons-div"><button id="accessibility-notes">accessibility info</button></a>
+    <div id="buttons-div" class="hidden">
+      <a href="#buttons-div"><button class="main-button" id="get-directions">directions & parking</button></a>
+      <a href="#buttons-div"><button class="main-button" id="accessibility-notes">accessibility info</button></a>
     </div>
     <div id="directions" class="hidden">
 
@@ -33,7 +38,7 @@
       
     </div>
     <div id="back-to-top">
-      <a href="#header"><button id="top" class="hidden">top</button></a>
+      <a href="#nav"><button class="main-button hidden"  id="top">top</button></a>
     </div>
   </section>
 </body>

@@ -37,18 +37,6 @@ const getNames = async () => {
     console.error(error.message)
   }
 }
-// write an async function getBeachInfo() to make an axios call to retrieve data for the beach selected and pass response to / get the [i] of the beach object from beachNames?
-const getBeachInfo = async (beach) => {
-  try {
-    const response = await axios.get(url);
-    console.log(response.data[beach].Location); //[beach] needs to be defined by the # of the option selected by the user
-  } catch (error) {
-    console.error(error.message);
-  }
-}
-
-
-// directionsButton.addEventListener("click", unhideElement);
 
 
 
@@ -92,7 +80,6 @@ dropDown.addEventListener("change", async () => {
         document.getElementById("info").append(basicInfo);
         const directionsDiv = document.getElementById("directions");
         directionsDiv.innerHTML = response.data[i].Directions;
-        console.log(response.data[i].Accessible_Notes);
 
         const accessibilityDiv = document.querySelector("#accessibility");
         if (response.data[i].Accessible_Notes === null) {
