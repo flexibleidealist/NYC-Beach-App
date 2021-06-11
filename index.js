@@ -7,13 +7,15 @@ const buttonsDiv = document.getElementById("buttons-div");
 
 const directionsButton = document.getElementById("get-directions");
 const accessibilityButton = document.getElementById("accessibility-notes");
+const weatherButton = document.getElementById("get-weather");
 const topButton = document.getElementById("top");
 
 const directionsDiv = document.getElementById("directions");
-
 const accessibilityDiv = document.getElementById("accessibility");
+const weatherDiv = document.getElementById("weather");
 
-// write a function appendNames() to populate the dropdown menu with the names of the beaches from the API call
+
+//function appendNames populates the dropdown menu with the names of the beaches from the API call
 
 const appendNames = (beachNames) => {
   beachNames.forEach (name => {
@@ -23,7 +25,7 @@ const appendNames = (beachNames) => {
   })
 }
 
-// write an async function getNames() to make an axios call to retrieve beach names [note: I had to prepend https://cors-anywhere.herokuapp.com/ to make this work]
+// async function getNames makes axios call to retrieve beach names [note: I had to prepend https://cors-anywhere.herokuapp.com/ to make this work]
 
 const getNames = async () => {
   try { 
@@ -38,39 +40,30 @@ const getNames = async () => {
   }
 }
 
-
-
-
 // call getNames() on page load
-
 
 getNames()
 
 
-
-
-
-
-
-// write a function displayBeachInfo() to display the main info on in the #info div of the display section
-
-// write a function displayDirections() to display directions & map in the #directions div of the display section and scroll to the top of that div
-// write a function displayAccessibility() to display detailed accessibility information  #accessibility div of the display section and scroll to the top of that div
-
-
-// add event listener to the dropdown menu to call getBeachInfo() when the user selects a beach
+// event listener on dropdown menu clears and hides information divs, then makes API call for information for selected beach and calls getWeather function, passing in the lat and lon from the first API
 
 dropDown.addEventListener("change", async () => {
   document.getElementById("info").childNodes.forEach(node => {
     node.remove();
+  });
   hideElement(directionsDiv);
   hideElement(accessibilityDiv);
+  hideElement(weatherDiv);
   hideElement(topButton);
-  });
   try {
     const response = await axios.get(url);
     for (let i = 0; i < response.data.length; i += 1) {
       if (response.data[i].Name === dropDown.value) {
+        
+        let lat = response.data[i].lat;
+        let lon = response.data[i].lon;
+          getWeather(lat, lon);
+        
         const basicInfo = document.createElement("p");
         basicInfo.innerHTML = 
         
@@ -92,20 +85,36 @@ dropDown.addEventListener("change", async () => {
             accessibilityDiv.innerHTML = `${response.data[i].Accessible_Notes}<br> For more information call ${response.data[i].Phone}.`
           };
 
-       
       }  
-      
-      
-        
-
       
     }
     
   } catch (error) {
     console.error(error.message);
   }
-  unhideElement(buttonsDiv);
+  
+  unhideElement(weatherButton);
+  unhideElement(accessibilityButton);
+  unhideElement(directionsButton);
 })
+
+//async function makes API call for weather and sets innerHTML of weather div to current conditions and temperature
+
+const getWeather = async (lat, lon) => {
+  
+  const weatherKey = "ad7657fdc05f9179f6aa98706fa65f23";
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&units=imperial&appid=${weatherKey}`
+  
+  try {
+    const response = await axios.get(weatherUrl);
+    weatherDiv.innerHTML = `<span>Current Conditions:</span> ${response.data.current.weather[0].description}<span><br>Temperature:</span> ${Math.round(response.data.current.temp)} F`;
+    
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+// functions to hide and unhide elements by adding/removing hidden class
 
 const unhideElement = (element) => {
   element.classList.remove("hidden");
@@ -114,18 +123,26 @@ const unhideElement = (element) => {
 const hideElement = (element) => {
   element.classList.add("hidden");
 }
-// add event listener to the directions button in the main info display (in the #info div) to toggle the display property of the #directions div to display on the page
+
+// event listeners display div with the relevant information and hide the other divs
+
+weatherButton.addEventListener("click", () => {
+  unhideElement(weatherDiv);
+  hideElement(accessibilityDiv);
+  hideElement(directionsDiv);
+  unhideElement(topButton);
+})
+
 directionsButton.addEventListener("click", () => {
   unhideElement(directionsDiv);
   hideElement(accessibilityDiv);
+  hideElement(weatherDiv);
   unhideElement(topButton);
 });
 
-// add event listener to the disability info button in the main info display (in the #info div) to call displayAccessibility()
 accessibilityButton.addEventListener("click", () => {
   unhideElement(accessibilityDiv);
   hideElement(directionsDiv);
+  hideElement(weatherDiv);
   unhideElement(topButton);
 });
-
-topButton.addEventListener("click", () => hideElement(topButton));
