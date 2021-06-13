@@ -1,5 +1,6 @@
-// define gloabl constants 
-const url = "https://cors-anywhere.herokuapp.com/https://www.nycgovparks.org/bigapps/DPR_Beaches_001.json"
+// define global constants 
+const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+const url = "https://www.nycgovparks.org/bigapps/DPR_Beaches_001.json"
 
 const dropDown = document.getElementById("dropdown");
 
@@ -29,7 +30,7 @@ const appendNames = (beachNames) => {
 
 const getNames = async () => {
   try { 
-    const response = await axios.get(url);
+    const response = await axios.get(proxyUrl + url);
     const beachNames = [];
     for (let i = 0; i < response.data.length; i += 1) {
       beachNames.push(response.data[i].Name);
@@ -56,7 +57,7 @@ dropDown.addEventListener("change", async () => {
   hideElement(weatherDiv);
   hideElement(topButton);
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(proxyUrl + url);
     for (let i = 0; i < response.data.length; i += 1) {
       if (response.data[i].Name === dropDown.value) {
         
