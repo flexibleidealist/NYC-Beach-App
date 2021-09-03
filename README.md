@@ -94,47 +94,47 @@
   <tr>
     <td class="tg-0pky">Initial HTML &amp; minimal styling</td>
     <td class="tg-0pky">1-2 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">1 hr</td>
   </tr>
   <tr>
     <td class="tg-0pky">JS for Axios API calls</td>
     <td class="tg-0pky">2 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">2 hrs</td>
   </tr>
   <tr>
     <td class="tg-0pky">JS for rendering content</td>
     <td class="tg-0pky">3 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">2 hrs</td>
   </tr>
   <tr>
     <td class="tg-0pky">JS for interactivity</td>
     <td class="tg-0pky">1-2 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">1.5 hrs</td>
   </tr>
   <tr>
     <td class="tg-0pky">Testing &amp; debugging JS</td>
     <td class="tg-0pky">2-3 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">3 hrs</td>
   </tr>
   <tr>
     <td class="tg-0pky">More detailed CSS styling</td>
     <td class="tg-0pky">3 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">4 hrs</td>
   </tr>
   <tr>
     <td class="tg-0pky">Research for adding post-MVP </td>
     <td class="tg-0pky">1-2 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">1 hr</td>
   </tr>
   <tr>
     <td class="tg-0pky">JS for post-MVP</td>
     <td class="tg-0pky">2-3 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">1.5</td>
   </tr>
   <tr>
     <td class="tg-0pky">Testing &amp; debugging</td>
     <td class="tg-0pky">2-3 hrs</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">4 hrs</td>
   </tr>
 </tbody>
 </table>
